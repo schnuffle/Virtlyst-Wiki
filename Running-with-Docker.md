@@ -19,3 +19,11 @@ Connect to <http://x.x.x.x:3000/>
 The username is "admin".  The password is generated randomly, and is displayed in the container logs at startup.
 
 Create a connection of type "Local socket", with any name you like, and you'll be able to see the VMs running on this host.
+
+## Troubleshooting
+
+After initial use of virtlyst, you may find the web interface stops working and reports:
+
+> You have no connection
+
+This can be fixed by `docker stop virtlyst` followed by `docker start virtlyst`.
