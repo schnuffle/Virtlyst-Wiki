@@ -9,7 +9,7 @@
 * To be able to access the host's libvirt and the web panel some stuff has to be mapped:
 
     ```
-    docker run -ti --name virtlyst -p 3000:3000 -v /run/libvirt:/run/libvirt:rw virtlyst
+    docker run -ti --init --name virtlyst -p 3000:3000 -v /run/libvirt:/run/libvirt:rw virtlyst
     ```
 
 ## Logging in
